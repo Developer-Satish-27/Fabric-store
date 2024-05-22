@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: white;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    color: black;
+    z-index: 1000;
+
+}
+
+.ul {
+    width: 75%;
+    text-align: center;
+    padding: 10px;
+}
+
+.ul li {
+    font-size: 25px;
+    display: inline;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.anchor:active {
+    color: black;
+}
+
+.anchor:visited {
+    color: black;
+}
+
+.anchor:hover {
+    color: rgb(174, 68, 3);
+}
+
+button:hover,
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(169, 128, 23);
+}
+
+button {
+    margin: 5px;
+    background-color: black;
+    padding: 5px;
+    width: 90px;
+    font-size: 15px;
+    color: white;
+    height: 35px;
+}
+
+.imgbox {
+    background-image: url(imgfabric.jpg);
+    background-size: cover;
+    height: 300px;
+    background-position-y: center;
+
+    padding-top: 40px;
+    padding-left: 250px;
+    color: white;
+}
+
+.align {
+    position: relative;
+    top: 65px;
+}
+
+.read {
+    margin: 10px;
+    display: grid;
+    grid-template-areas: "box1 box2 box3 box4 box5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.shipping {
+    grid-area: box2;
+    text-align: center;
+}
+
+.returns {
+    grid-area: box3;
+    text-align: center;
+}
+
+.payments {
+    grid-area: box4;
+    text-align: center;
+}
+
+.read button {
+    width: 150px;
+}
+
+.category {
+    padding: 15px;
+    background-color: rgba(223, 223, 223, 0.462);
+    display: grid;
+    grid-template-areas: "img1 img2 img3 img4 "
+        "img5 img6 img7 img8"
+        "text1 text2 text3 text4";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.style {
+    grid-area: img2;
+    color: whitesmoke;
+    padding: 10px;
+    border: 2px solid auto;
+    background-image: url(imgtowal.jpg);
+    background-size: cover;
+    width: 320px;
+    margin: 10px;
+}
+
+.products {
+    border: 2px solid auto;
+    grid-area: img3;
+    padding: 10px;
+    margin: 10px;
+    background-image: url(imgbol.jpg);
+    background-size: cover;
+    width: 320px;
+}
+
+.category button {
+    width: 180px;
+}
+
+.img5 {
+    background-image: url(imgdesigner.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    height: 500px;
+    margin: 5px;
+    grid-area: img5;
+    object-fit: cover;
+}
+
+.hover {
+    height: 96%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 5px;
+    opacity: 0;
+    padding: 10px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.hover:hover {
+    opacity: 1;
+    transform: translatey(-40px);
+}
+
+.img6 {
+    background-image: url(imgbedside.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    height: 500px;
+    margin: 5px;
+    grid-area: img6;
+}
+
+.img7 {
+    background-image: url(imgbadroom.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    height: 500px;
+    margin: 5px;
+    grid-area: img7;
+}
+
+.img8 {
+    background-image: url(imgthread.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    height: 500px;
+    margin: 5px;
+    grid-area: img8;
+}
+
+.text1 {
+    text-align: center;
+    grid-area: text1;
+    margin: 10px;
+
+}
+
+.text2 {
+    text-align: center;
+    grid-area: text2;
+    margin: 10px;
+
+}
+
+.text3 {
+    text-align: center;
+    grid-area: text3;
+    margin: 10px;
+
+}
+
+.text4 {
+    text-align: center;
+    grid-area: text4;
+    margin: 10px;
+
+}
+
+.wide {
+    display: grid;
+    grid-template-areas: "div1 div2 div3 div4 div5 div6  ";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.range {
+    grid-area: div2;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.under {
+    text-decoration: underline 2px;
+}
+
+.img {
+    grid-area: div3;
+    background-image: url(imgthread2.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+
+.join {
+    grid-area: div4;
+    background-color: rgba(173, 173, 173, 0.308);
+    padding: 10px;
+    margin: 10px;
+}
+
+.learn {
+    grid-area: div5;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.range h1:hover,
+.under:hover {
+    color: rgb(169, 128, 23);
+}
+
+.learn button {
+    width: 130px;
+}
+
+.learn button:hover {
+    background-color: rgba(98, 70, 1, 0.652);
+}
+
+.numbers {
+    height: 100px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-areas: "num1 num2 num3 num4 num5 num6";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.happy {
+    grid-area: num2;
+}
+
+.sales {
+    grid-area: num3;
+}
+
+.regular {
+    grid-area: num4;
+}
+
+.delivery {
+    grid-area: num5;
+}
+
+.center {
+    margin: 15px;
+    text-align: center;
+}
+
+.reviews {
+    display: grid;
+    grid-template-areas: "star1 star2 star3 star4 star5 star6";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.rating1 {
+    grid-area: star2;
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(173, 173, 173, 0.308);
+}
+
+.rating2 {
+    grid-area: star3;
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(173, 173, 173, 0.308);
+}
+
+.rating3 {
+    grid-area: star4;
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(173, 173, 173, 0.308);
+}
+
+.rating4 {
+    grid-area: star5;
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(173, 173, 173, 0.308);
+}
+
+.fabric {
+    padding: 15px;
+    height: 200px;
+    display: grid;
+    grid-template-areas: "photo1 photo2 photo3 photo4 photo5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(173, 173, 173, 0.308);
+
+}
+
+.photo1 {
+    grid-area: photo2;
+    background-image: url(imgbedside.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    margin: 5px;
+}
+
+.photo2 {
+    grid-area: photo3;
+    background-image: url(imgfabric.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    margin: 5px;
+}
+
+.photo3 {
+    grid-area: photo4;
+    background-image: url(imgtowal.jpg);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    margin: 5px;
+}
+
+.photos {
+    display: grid;
+    grid-template-areas: "image1 image2 image3 image4 image5 image6 ";
+
+}
+
+.image1 {
+    grid-area: image1;
+    background-image: url(01.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px
+}
+
+.image2 {
+    grid-area: image2;
+    background-image: url(02.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px
+}
+
+.image3 {
+    grid-area: image3;
+    background-image: url(03.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px
+}
+
+.image4 {
+    grid-area: image4;
+    background-image: url(imgthread2.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px
+}
+
+.image5 {
+    grid-area: image5;
+    background-image: url(imgbol.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px
+}
+
+.image6 {
+    grid-area: image6;
+    background-image: url(imgbadroom.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px
+}
+
+.sub {
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "sub1 sub2 sub3 sub3 sub4";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 200px;
+}
+
+.form {
+    padding-top: 20px;
+    padding-left: 5px;
+    grid-area: sub2;
+    font-size: 18px;
+    background-color: rgba(182, 182, 182, 0.37);
+
+}
+
+.button {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    height: 25px;
+    width: 80px;
+
+}
+
+.form p {
+    font-size: 15px;
+}
+
+.image {
+    margin: 5px;
+    grid-area: sub3;
+    background-image: url(imgsilk.jpeg);
+    background-size: cover;
+}
+
+.email {
+    border: none;
+    height: 25px;
+}
+
+hr {
+    height: 2px;
+    background-color: rgb(138, 138, 138);
+    position: relative;
+    left: 21%;
+    margin-bottom: 15px;
+    border-color: rgb(138, 138, 138);
+
+}
+
+.footer {
+    background-color: rgb(46, 46, 46);
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.hover1 {
+    height: 90%;
+    cursor: pointer;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hover1:hover {
+    opacity: 1;
+}
+
+.search {
+    background-color: white;
+    font-size: 50px;
+    transform: rotate(-90deg);
+    width: 60px;
+    border-radius: 50%;
+}
